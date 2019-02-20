@@ -1,4 +1,4 @@
-# heterogeneity
+# hbnm (heterogeneous brain network model)
 
 Hierarchical Heterogeneity across Human Cortex Shapes Large-Scale Neural Dynamics
 Demirtas et al., 2019 (Neuron)
