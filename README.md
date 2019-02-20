@@ -1,4 +1,4 @@
-# hbnm (heterogeneous brain network model)
+# hbnm (hierarchical brain network model)
 
 Hierarchical Heterogeneity across Human Cortex Shapes Large-Scale Neural Dynamics
 
