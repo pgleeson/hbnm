@@ -449,7 +449,7 @@ class Model(object):
 
             # Update state variables
             if not (i % n_save):
-                i_save = i / n_save
+                i_save = int(i / n_save)
                 if not save_mem:
                     synaptic_state[:, :, i_save] = self.state
 
@@ -463,7 +463,7 @@ class Model(object):
 
                 if self._verbose:
                     if not (i_save % 1000):
-                        print(_save)
+                        print(i_save)
 
         if self._verbose:
             print("Simulation complete.")
