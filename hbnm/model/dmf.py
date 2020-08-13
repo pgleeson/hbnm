@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
 """ Dynamic mean field model base class."""
-from utils import cov_to_corr
-from utils import load_model_params
-from hemo import Balloon
-from sim import Sim
+from .utils import cov_to_corr
+from .utils import load_model_params
+from .hemo import Balloon
+from .sim import Sim
 
 from scipy.optimize import fsolve
 from scipy.linalg import solve_lyapunov, eig

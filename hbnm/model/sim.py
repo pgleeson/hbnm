@@ -4,9 +4,13 @@
 system via Euler integration. Also includes hemodynamic
 response functionality. """
 
-import cPickle as pickle
+try:
+    import cPickle as pickle
+except:
+    import pickle
+    
 import numpy as np
-from utils import cov_to_corr
+from .utils import cov_to_corr
 from os.path import exists
 
 
