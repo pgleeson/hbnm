@@ -148,7 +148,7 @@ class Pmc(object):
             results = self._run_sampler(self.rejection_threshold, run_id)
 
         if self.verbose:
-            print "Completed sampler# " + str(run_id) + ", writing results..."
+            print("Completed sampler# " + str(run_id) + ", writing results...")
         self.data.save('samples_' + str(run_id + 1) + '.npy', results)
 
     def wrap(self, n_outputs):
@@ -210,7 +210,7 @@ class Pmc(object):
         effective_sample = self._effective_sample_size(weights)
 
         if self.verbose:
-            print "Collecting sampler results for iteration " + str(self.iteration) + "..."
+            print("Collecting sampler results for iteration " + str(self.iteration) + "...")
 
         file_out = self.data.save('iteration_' + str(self.iteration) + '.hdf5')
         file_out.create_dataset('theta', data=theta)
@@ -292,9 +292,9 @@ class Pmc(object):
 
             if distance < epsilon:
                 if self.verbose:
-                    print "Sampler #" + str(run_id+1)
-                    print "Accepted sample " + str(accepted_count+1) + " of " + str(self.n_particles)
-                    print "Model Fit (1 - distance) = " + str(1.0-distance)
+                    print("Sampler #" + str(run_id+1))
+                    print("Accepted sample " + str(accepted_count+1) + " of " + str(self.n_particles))
+                    print("Model Fit (1 - distance) = " + str(1.0-distance))
 
                 self.get_appendices(run_id)
                 accepted_count += 1

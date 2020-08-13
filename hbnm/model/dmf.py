@@ -406,7 +406,7 @@ class Model(object):
         #synaptic_state[:, :, 0] = self.state
 
         if self._verbose:
-            print "Beginning simulation."
+            print("Beginning simulation.")
 
         self.delays = delays
         if self.delays:
@@ -463,10 +463,10 @@ class Model(object):
 
                 if self._verbose:
                     if not (i_save % 1000):
-                        print i_save
+                        print(_save)
 
         if self._verbose:
-            print "Simulation complete."
+            print("Simulation complete.")
 
         self.sim.t = t
         self.sim.dt = dt_save
@@ -650,7 +650,7 @@ class Model(object):
         """
 
         if self._unstable:
-            if self._verbose: print "System unstable - no solution to Lyapunov equation - exiting"
+            if self._verbose: print("System unstable - no solution to Lyapunov equation - exiting")
             self._cov, self._cov_bold, self._corr_bold, self._corr = None, None, None, None
             return
         else:

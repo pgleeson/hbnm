@@ -62,7 +62,7 @@ class Sim(object):
             sim_dict = pickle.load(open(sim_file, "rb"))
             for key, attr in sim_dict.items():
                 self.__setattr__(key, attr)
-            print "Simulation loaded."
+            print("Simulation loaded.")
 
         return
 
